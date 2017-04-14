@@ -13,6 +13,7 @@ namespace Microsoft.EntityFrameworkCore.Tests.Infrastructure
             Assert.Equal("Microsoft.EntityFrameworkCore.Database", LoggerCategory.Database.Name);
             Assert.Equal("Microsoft.EntityFrameworkCore.Database.Sql", LoggerCategory.Database.Sql.Name);
             Assert.Equal("Microsoft.EntityFrameworkCore.Database.Connection", LoggerCategory.Database.Connection.Name);
+            Assert.Equal("Microsoft.EntityFrameworkCore.Database.DataReader", LoggerCategory.Database.DataReader.Name);
             Assert.Equal("Microsoft.EntityFrameworkCore.Database.Transaction", LoggerCategory.Database.Transaction.Name);
             Assert.Equal("Microsoft.EntityFrameworkCore.Infrastructure", LoggerCategory.Infrastructure.Name);
             Assert.Equal("Microsoft.EntityFrameworkCore.Migrations", LoggerCategory.Migrations.Name);
@@ -29,6 +30,7 @@ namespace Microsoft.EntityFrameworkCore.Tests.Infrastructure
             Assert.Equal(LoggerCategory.Database.Name, new LoggerCategory.Database().ToString());
             Assert.Equal(LoggerCategory.Database.Sql.Name, new LoggerCategory.Database.Sql().ToString());
             Assert.Equal(LoggerCategory.Database.Connection.Name, new LoggerCategory.Database.Connection().ToString());
+            Assert.Equal(LoggerCategory.Database.DataReader.Name, new LoggerCategory.Database.DataReader().ToString());
             Assert.Equal(LoggerCategory.Database.Transaction.Name, new LoggerCategory.Database.Transaction().ToString());
             Assert.Equal(LoggerCategory.Infrastructure.Name, new LoggerCategory.Infrastructure().ToString());
             Assert.Equal(LoggerCategory.Migrations.Name, new LoggerCategory.Migrations().ToString());
